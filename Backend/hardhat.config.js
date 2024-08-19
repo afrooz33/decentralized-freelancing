@@ -3,18 +3,20 @@
 // require("@nomiclabs/hardhat-etherscan");
 require("@nomicfoundation/hardhat-verify");
 require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+
 
 module.exports = {
   solidity: "0.8.24",
   networks: {
     polygon: {
-      url: "https://polygon-amoy.infura.io/v3/bae17cf587844ab6ac4489b9f0c13735", // RPC URL for Polygon mainnet
-      accounts: [`0x${"c9438be951755b2a267c85e1ed083ba7bc90bb51a8aeee3efe79da008c083a83"}`], // Replace with your private key
+      url: `https://polygon-amoy.infura.io/${process.env.POLYGON_URL}`, // RPC URL for Polygon mainnet
+      accounts: [`0x${process.env.POLYGON_ACCOUNT_PRIVATE_KEY}`], // Replace with your private key
       chainId: 80002,
     },
   },
   etherscan: {
-    apiKey: "27TFAI6ZX2ASM4GG5PVHP9HIPJMV7MHFW5", // Replace with your Polygonscan API key
+    apiKey: `${process.env.ETHERSCAN_API_KEY}`, // Replace with your Polygonscan API key
   },
 
   customChains: [
@@ -22,7 +24,7 @@ module.exports = {
       network: "polygon",
       chainId: 80002,
       urls: {
-        apiURL: "https://polygon-amoy.infura.io/v3/bae17cf587844ab6ac4489b9f0c13735",
+        apiURL: `https://polygon-amoy.infura.io/${process.env.POLYGON_URL}`,
         browserURL: "https://amoy.polygonscan.com",
       },
     },
