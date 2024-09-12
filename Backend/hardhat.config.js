@@ -31,3 +31,31 @@ module.exports = {
   ],
 
 };
+
+
+
+
+
+/*
+  //this contract on deploy on also ethereum blockchain
+
+  require("@nomicfoundation/hardhat-verify");
+require('@nomiclabs/hardhat-ethers');
+require('dotenv').config();
+
+module.exports = {
+  solidity: "0.8.20",
+  networks: {
+    sepolia: {
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
+    },
+    // You can add other networks like mainnet or rinkeby here
+  },
+
+  etherscan: {
+    apiKey: `${process.env.ETHERSCAN_APIKEY}`
+  }
+};
+
+*/
