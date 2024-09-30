@@ -5,7 +5,7 @@ import abi from "../../Contract/Freelancing.json";
 const contractABI = abi.abi;
 const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
 
-const PlaceOrder = () => {
+const DeliverFreelancer = () => {
   const [freelancerAddress, setFreelancerAddress] = useState('');
   const [amount, setAmount] = useState('');
   const [orderId, setOrderId] = useState('');
@@ -116,11 +116,4 @@ const PlaceOrder = () => {
   );
 };
 
-export default PlaceOrder;
-
-
-
-
-
-
-//orderid = 0x29446483059310427cfd781e864f1fe79c137b29dfc24be9487697b8fed80d9d
+export default DeliverFreelancer;
