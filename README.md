@@ -45,7 +45,7 @@ This section allows freelancers to showcase what services they can offer and giv
 Once registered as a client, you can post jobs by following these steps:
 
 1. **Job Category**: Select a job category, such as Blockchain Development, Video Editing, etc.
-2. **Job Description**: Provide a detailed description of the work to be done. Include important details using unique symbols, **emojis**, or **images** for clarity.
+2. **Job Description**: Provide a detailed description of the work to be done. Include important details using unique symbols, **emojis** for clarity.
 3. **Payment**: Set the amount of **ETH** for the job and specify the payment type (Hourly, Part-Time, or Full-Time).
 4. Once the job is posted, it will show up in the job listings with all the details you've provided.
 
