@@ -1,0 +1,144 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px; /* Reduced gap for compact layout */
+}
+
+/* Text Content Styling */
+.hero-content {
+  max-width: 500px; /* Slightly reduced max width */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 36px; /* Reduced font size */
+  margin-bottom: 15px;
+  color: #222;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 18px; /* Reduced font size */
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.4;
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Buttons Styling */
+.hero-buttons {
+  display: flex;
+  gap: 15px; /* Reduced gap between buttons */
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.client-btn, .freelancer-btn {
+  padding: 10px 20px; /* Reduced padding for compact buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.client-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.client-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.freelancer-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.freelancer-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Hero Animation Styling */
+.hero-animation img {
+  width: 100%;
+  max-width: 400px; /* Reduced image size */
+  animation: float 6s ease-in-out infinite, rotate 20s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Slightly reduced float distance */
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); /* Reduced slide distance */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); /* Reduced slide distance */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

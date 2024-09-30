@@ -1,0 +1,122 @@
+/* Main App Container */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: 'SF Pro', 'Arial', sans-serif;
+}
+
+/* MetaMask Warning */
+.install-metamask {
+  text-align: center;
+  background-color: #ffeded;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffcccc;
+}
+
+.install-metamask h2 {
+  color: #ff5c5c;
+  margin-bottom: 10px;
+}
+
+.install-metamask a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.install-metamask a:hover {
+  text-decoration: underline;
+}
+
+/* Chat Container */
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat h3 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Messages Container */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ececec;
+}
+
+.messages div {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #6b88eb;
+  color: #fff;
+}
+
+/* Message Input Form */
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.messageForm input {
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.messageForm button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.messageForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Scrollbar Styling */
+.messages::-webkit-scrollbar {
+  width: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+

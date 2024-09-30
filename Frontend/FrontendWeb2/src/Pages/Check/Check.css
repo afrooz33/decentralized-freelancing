@@ -1,0 +1,164 @@
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+    font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+    animation: fadeIn 1s ease-out;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.app-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.app-container input {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'SF Pro', sans-serif;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.app-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.app-container button {
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.app-container button:hover {
+    background-color: #54e77e;
+    transform: translateY(-2px);
+}
+
+.user-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.user-info p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Styling for Name, Description, and Reviews to be bold */
+.user-info p span {
+    font-weight: bold;
+}
+
+.user-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-info ul li {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.review-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-section textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+    height: 100px;
+    font-family: 'SF Pro';
+    transition: border-color 0.3s;
+}
+
+.review-section textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.review-section button {
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.review-section button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

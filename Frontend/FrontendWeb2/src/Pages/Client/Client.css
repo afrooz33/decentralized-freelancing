@@ -1,0 +1,143 @@
+/* Container for the Client registration page */
+.RegisterClient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 10px;
+  padding-top: 60px;
+  font-family: 'SF Pro', sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Form styling */
+.registerClient {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s; /* Delay before this animation starts */
+}
+
+/* Heading styling */
+.registerClient h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input and textarea styling */
+.registerClient input,
+.registerClient textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: 'SF Pro', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.registerClient input:focus,
+.registerClient textarea:focus {
+  border-color: #007bff;
+}
+
+/* Textarea specific styling */
+.registerClient textarea {
+  height: 250px;
+  resize: vertical;
+}
+
+/* Button styling */
+.registerClient button {
+  padding: 12px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+  animation: slideInLeft 0.5s ease-out;
+  animation-delay: 1s; /* Delay before this animation starts */
+}
+
+.registerClient button:hover {
+  background-color: #54e77e;
+  transform: translateY(-2px);
+}
+
+.registerClient button:active {
+  transform: translateY(1px);
+}
+
+/* Client details styling */
+.clientDetails {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 1.5s; /* Delay before this animation starts */
+}
+
+.clientDetails h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.clientDetails p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.clientDetails p strong {
+  color: #007bff;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

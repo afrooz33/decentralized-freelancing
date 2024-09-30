@@ -1,0 +1,249 @@
+/* General Container Styling */
+
+.jobPage {
+  padding-top: 100px;
+}
+
+.jobPage .jobPage-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.job-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 50px;
+  height: 100vh; /* Ensure the container fits the viewport height */
+}
+
+.job-list-container {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Right-side shadow */
+  padding: 20px;
+  margin-top: 0; /* Ensure no margin on top */
+  margin-bottom: 0;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.job-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.job-item:hover {
+  background-color: #eaf1ff;
+  transform: translateY(-2px);
+}
+
+.job-details {
+  flex: 3;
+  border-radius: 10px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-details h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+
+.chat-container, .place-order-container {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Right-side shadow */
+  padding: 20px;
+}
+
+
+
+.orderButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+input {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #55e775;
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+/* Overall container */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* MetaMask warning */
+.metamask-warning {
+  text-align: center;
+  color: #fff;
+}
+
+.metamask-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f6851b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.metamask-link:hover {
+  background-color: #d37416;
+}
+
+/* Chat box */
+.chat-box {
+  width: 400px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 20px;
+  background-color: #0093E9;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.sent {
+  background-color: #55e775;
+  color: white;
+  align-self: flex-end;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.received {
+  background-color: #0093E9;
+  color: white;
+  align-self: flex-start;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.message-from {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.message-form {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.recipient-input, .message-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #0093E9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #007bb8;
+}
+
+/* Scrollbar */
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
