@@ -120,6 +120,8 @@ contract Freelancing is ReentrancyGuard, Pausable {
         bool cancelled;
     }
 
+    event orderIdInEvent(bytes32);
+
     // Mappings to store data about freelancers, clients, jobs, and orders
     mapping(address => Freelancer) public freelancers;
     mapping(address => Client) public clients;
@@ -188,19 +190,19 @@ contract Freelancing is ReentrancyGuard, Pausable {
 
     // Place an order for a job
     function placeOrder(
-        uint256 _jobId,
         address _freelancer
     ) public payable nonReentrant whenNotPaused returns (bytes32) {
         require(
-            jobs[_jobId].clientAddress != address(0),
+            jobs[jobCounter].clientAddress != address(0),
             "The job you're trying to order doesn't exist."
         );
         require(
-            msg.value == (jobs[_jobId].amount * (100 + TAX_RATE)) / 100,
+            msg.value >= (jobs[jobCounter].amount * (100 + TAX_RATE)) / 100,
             "Incorrect payment amount. Make sure to include the tax."
         );
 
-        bytes32 orderId = generateOrderId(_jobId, msg.sender, _freelancer);
+
+        bytes32 orderId = generateOrderId(jobCounter, msg.sender, _freelancer);
         require(
             !orderIds[orderId],
             "This order ID has already been used. Please try again."
@@ -208,7 +210,7 @@ contract Freelancing is ReentrancyGuard, Pausable {
 
         orders[orderId] = Order({
             orderId: orderId,
-            jobId: _jobId,
+            jobId: jobCounter,
             client: msg.sender,
             freelancer: _freelancer,
             amount: msg.value,
@@ -220,6 +222,8 @@ contract Freelancing is ReentrancyGuard, Pausable {
             cancelled: false
         });
         orderIds[orderId] = true; // Mark the order ID as used
+
+        emit orderIdInEvent(orderId);
 
         return orderId;
     }
