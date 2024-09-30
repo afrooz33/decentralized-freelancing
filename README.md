@@ -1,7 +1,3 @@
-Here is the complete README file based on your requirements:
-
----
-
 # 🌐 Decentralized Freelancing Platform (Ethereum & Polygon)
 
 This decentralized freelancing platform is deployed on **Ethereum** and **Polygon** blockchains, providing secure and efficient transactions between clients and freelancers.
@@ -143,7 +139,3 @@ Before you begin, ensure you have met the following requirements:
 6. **Ethereum/Polygon Testnet Faucet**: To test the platform, you'll need test ETH or MATIC for gas fees. You can get free test tokens from these faucets:
    - **Ethereum (Goerli) Faucet**: [Link](https://faucet.goerli.mudit.blog/)
    - **Polygon Mumbai Faucet**: [Link](https://faucet.polygon.technology/)
-
----
-
-This README covers the platform's workflow from registration to job posting, freelancer-client interaction, job completion, and the security mechanisms in place.
